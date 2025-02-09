@@ -129,7 +129,8 @@
             );
         }
 
-        ReactDOM.createRoot(document.getElementById("root")).render(<CalendarWidget />);
+        // FIX: Use `ReactDOM.render` instead of `createRoot`
+        ReactDOM.render(<CalendarWidget />, document.getElementById("root"));
     </script>
 </body>
 </html>
