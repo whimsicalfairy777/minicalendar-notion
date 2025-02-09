@@ -35,7 +35,7 @@
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/dist/date-fns.min.js"></script>
 
-    <script type="text/javascript">
+    <script type="text/babel">
         const { useState, useEffect } = React;
         const { format, startOfMonth, endOfMonth, eachDayOfInterval, getDay } = dateFns;
 
@@ -129,7 +129,6 @@
             );
         }
 
-        // FIX: Use `ReactDOM.render` instead of `createRoot`
         ReactDOM.render(<CalendarWidget />, document.getElementById("root"));
     </script>
 </body>
